@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">带货帮</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="imate_back">Back</string>
+    <string name="edit_text_search">SEARCH</string>
+    <string name="voice_cancel">Voice Cancel</string>
+    <string name="action_search">Search</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="string_filler">Filler</string>
+    <string name="about">声明：本产品由华南理工大学软件学院13级6班12组成员所有,盗版必究！</string>
+    <string name="about1">使用：本产品车主、货主双端集成</string>
+    <string name="about2">车主；车主可于“我是车主”操作界面进行路线规划，设定行车路线后方可进行订单接收与导航，并可在车主订单模块查看可接收订单</string>
+    <string name="about3">货主：货主可于“我是货主”操作界面进行路线规划与订单发布，并可在货主模块查看历史订单</string>
+    <string name="about4">反馈：如果在使用过程中，出现重大问题，可及时与6班程序猿们进行联系，联系方式为：</string>
+    <string name="about5">18-25岁女子请联系：15602383152 黄志龙</string>
+    <string name="about6">其余人员请联系：</string>
+    <string name="about7">18814122736 吴树杰</string>
+    <string name="about8">13250767570 冯曦蒙</string>
+    <string name="about9">15626141829 郑嘉</string>
+    <string name="about10">12组全体成员</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="app_id">qaq</string>
+
+    <string name="username">用户名</string>
+    <string name="pwd">密码</string>
+    <string name="repwd">确认密码</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="findpwd">> 找回密码</string>
+    <string name="toregist">> 去注册</string>
+    <string name="phone">手机号码</string>
+    <string name="idcard">身份证号</string>
+    <string name="kinds">货物种类</string>
+    <string name="pay">支付方式</string>
+    <string name="time">送达时间</string>
+</resources>

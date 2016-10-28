@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_order_nearby"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroud"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <!--标题栏，居中显示app名-->
+            <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="我的订单          "
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+            </android.support.v7.widget.Toolbar>
+
+            <!--选项卡，分两栏-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:tabTextColor="@color/white"
+                app:tabSelectedTextColor="@color/colorAccent"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <!--选项卡下的卡页，用viewpage作为容器-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kinds">
+        <item>普通</item>
+        <item>食品</item>
+        <item>百货</item>
+        <item>设备</item>
+        <item>家电五金</item>
+        <item>建材</item>
+        <item>木材</item>
+        <item>纺织品</item>
+        <item>药品</item>
+        <item>化工</item>
+        <item>生鲜</item>
+        <item>蔬菜</item>
+        <item>农副产品</item>
+        <item>矿产</item>
+        <item>大件</item>
+        <item>小货</item>
+        <item>酒类</item>
+    </string-array>
+    
+    <string-array name="pay">
+        <item>支付宝支付</item>
+        <item>货到付款</item>
+    </string-array>
+
+    <string-array name="volume">
+        <item>0%</item>
+        <item>20%</item>
+        <item>40%</item>
+        <item>60%</item>
+        <item>80%</item>
+        <item>100%</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>6时-8时</item>
+        <item>8时-11时</item>
+        <item>11时-14时</item>
+        <item>14时-18时</item>
+        <item>18时-22时</item>
+        <item>22时-次日8时</item>
+    </string-array>
+
+    <string-array name="release">
+        <item>20%</item>
+        <item>40%</item>
+        <item>60%</item>
+        <item>80%</item>
+        <item>100%</item>
+    </string-array>
+
+    <string-array name="distance">
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+
+    <string-array name="time_extra">
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+</resources>

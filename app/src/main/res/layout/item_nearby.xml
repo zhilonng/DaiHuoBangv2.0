@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_menu_camera"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:elevation="4dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型：图书"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重量：20KG"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目的地：华南理工大学大学城校区B7-233"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10km"
+                android:layout_gravity="right|center_vertical"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

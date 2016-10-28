@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="100dp"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/ic_login_logo"
+                android:layout_gravity="center"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp">
+                <EditText
+                    android:id="@+id/et_phonenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="手机号"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp">
+                <EditText
+                    android:id="@+id/et_pwd"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pwd"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <CheckBox
+                    android:id="@+id/checkbox_rememberpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="记住密码"
+                    android:textColor="@color/grey"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_autologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动登录 "
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:elevation="8dp"
+                android:textSize="25sp"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/btn_findpwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="@string/findpwd"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_gravity="left|center_vertical"
+                        style="?android:attr/borderlessButtonStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/btn_toregist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="@string/toregist"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:layout_gravity="right|center_vertical"
+                        style="?android:attr/borderlessButtonStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

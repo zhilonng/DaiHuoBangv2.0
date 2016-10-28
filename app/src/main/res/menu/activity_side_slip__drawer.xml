@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_goodowner"
+            android:icon="@drawable/goodowner"
+            android:title="我是货主" />
+        <item
+            android:id="@+id/nav_carowner"
+            android:icon="@drawable/carowner"
+            android:title="我是车主" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ordercenter"
+            android:title="车主订单" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/order"
+            android:title="货主订单" />
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/personalinfo"
+            android:title="个人中心" />
+
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/turnoff"
+                android:title="退出" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="关于" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,229 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_coordlytmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:visibility="visible"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_search"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/image_search_back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:contentDescription="@string/imate_back"
+                    android:padding="12dp"
+                    android:src="@mipmap/ic_arrow_back"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_text_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_text_search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"/>
+
+                <ImageButton
+                    android:id="@+id/btn_startsearch"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:contentDescription="@string/voice_cancel"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_startbutton"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </com.amap.api.maps.MapView>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout_select"
+            android:orientation="vertical"
+            android:layout_height="200dp"
+            android:background="#00ffffff"
+            android:layout_gravity="left|bottom"
+            android:elevation="8dp">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/lyt_coordlyt"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom">
+                <Space
+                    android:id="@+id/space_dp"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/lyt_search"
+                    android:layout_marginBottom="10dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/space_dp"
+                    android:layout_marginLeft="3dp"
+                    app:backgroundTint="#ffffff"
+                    app:rippleColor="#ffffff"
+                    app:fabSize="mini"
+                    android:src="@drawable/ic_location"
+                    android:layout_above="@+id/lyt_search"
+                    android:layout_marginBottom="10dp"
+                    />
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_route"
+                    android:layout_toRightOf="@+id/fab_map"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#ffffff"
+                    app:rippleColor="#ffffff"
+                    app:fabSize="mini"
+                    android:src="@drawable/ic_route"
+                    android:layout_above="@+id/lyt_search"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:id="@+id/lyt_search"
+                android:layout_alignParentBottom="true">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/ic_startway"
+                        android:layout_weight="0.13"/>
+                <TextView
+                    android:id="@+id/edt_startpoint"
+                    android:layout_width="285dp"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="6dp"
+                    android:hint="点击此处，搜索出发点"
+                    android:textSize="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.55" />
+                    <TextView
+                        android:id="@+id/tv_startpoint"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="详情 >"
+                        android:textSize="15dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.35"
+                        android:textColor="#3f51b5"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/ic_endway"
+                        android:layout_weight="0.13"/>
+                    <TextView
+                        android:id="@+id/edt_destination"
+                        android:layout_width="285dp"
+                        android:background="#ffffff"
+                        android:layout_marginLeft="6dp"
+                        android:hint="点击此处，搜索目的地"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.55" />
+                    <TextView
+                        android:id="@+id/tv_endpoint"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="详情 >"
+                        android:textSize="15dp"
+                        android:layout_weight="0.35"
+                        android:textColor="#3f51b5"/>
+                </LinearLayout>
+                <myownerview.DrawableCentetButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="发布运力"
+                    android:textColor="#424242"
+                    android:background="#ffffff"
+                    android:shadowColor="#ffffff"
+                    android:id="@+id/btn_startAccept"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:drawableRight="@drawable/ic_accept1"
+                    android:drawablePadding="5dp"/>
+
+
+            </LinearLayout>
+            </RelativeLayout>
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

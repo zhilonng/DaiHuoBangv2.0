@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.daihuobangv10">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+     
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_biantai"
+        android:label="带货帮"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        //高德申请的key值
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="feeffadd31037677cd2d48b278b9b1d6" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".SideSlip_Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Search_Activity" />
+        <activity android:name=".BaseNavi_Activity" />
+        <activity android:name=".Login_Activity" />
+        <activity android:name=".Regist_Activity" />
+        <activity android:name=".OrderDetails_Activity" />
+        <activity android:name=".OrderNearby_Activity" />
+        <activity android:name=".PersonalInfo_Activity" />
+        <activity android:name=".OrderRelease_Activity" />
+        <activity android:name=".EditInfo_Activity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".ViewOrder_Activity" />
+        <activity android:name=".About_Activity"/>
+        <activity android:name=".Confirm_Order_Activity" />
+        <activity
+            android:name=".SplashScreen_Activity"
+            android:label="带货帮">
+
+        </activity>
+    </application>
+
+</manifest>
